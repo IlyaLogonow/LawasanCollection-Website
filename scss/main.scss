@@ -1,0 +1,23 @@
+/*Reset*/
+@import "./base/reset";
+/*Vars*/
+@import "./base/vasr";
+/*Base*/
+@import "./base/base";
+
+/*Blocks*/
+/*MARQUEE*/
+@import "./blocks/runningLine";
+/*MARQUEE-END*/
+
+/*HEADER*/
+@import "./blocks/header";
+/*HEADER-END*/
+
+/*CONTENT*/
+@import "./blocks/content";
+/*CONTENT-END*/
+
+/*FOOTER*/
+@import "./blocks/footer";
+/*FOOTER-END*/

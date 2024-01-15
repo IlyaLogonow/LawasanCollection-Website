@@ -1,0 +1,49 @@
+.runningLine {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.runningLine__items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+
+    min-height: 59px;
+    background-color: $white;
+}
+.items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    counter-reset: item;
+    justify-content: space-around;
+    min-width: 100%;
+}
+.marquee {
+    animation: scroll 20s linear infinite;
+}
+
+.item {
+    display: flex;
+    letter-spacing: 1px;
+}
+.item--after::after {
+    content: url("./../img/runningLine/runningLine-item.svg");
+    width: 16px;
+    height: 16px;
+    margin-left: 50px;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+  

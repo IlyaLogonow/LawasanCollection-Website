@@ -1,0 +1,32 @@
+.hero {
+    margin-bottom: 44px;
+}
+
+.swiper {
+    width: 100%;
+    height: 429px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #060707;
+    background:#ED98DC;
+    border-radius: 0px;
+}

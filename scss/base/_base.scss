@@ -11,6 +11,25 @@ a {
     color: $main-color;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 290px;
+    height: 83px;
+
+    margin: 0 auto;
+
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1px;
+
+    background-color: #C8B6E8;
+    border-radius: 70%;
+    border: $border
+}
+
 .container {
     margin: 0 auto;
     padding: 0px 15px;

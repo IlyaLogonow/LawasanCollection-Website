@@ -1,0 +1,26 @@
+.runningLine-primus {
+    margin-bottom: 16pxpx;
+}
+.runningLine-primus__items {
+    min-height: 93px;
+    background-color: $runningLine-primus-bg;
+}
+.runningLine-primus__items .items {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.item-primus--after::after {
+    content: url("./../img/runningLine-primus/+.svg");
+    width: 24px;
+    height: 24px;
+    margin-left: 200px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}

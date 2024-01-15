@@ -6,7 +6,7 @@
 .main-nav {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #060707;
+    border: $border;
 }
 .main-nav__item {
     display: flex;
@@ -16,7 +16,7 @@
     min-width: 153.75px;
     min-height: 51px;
 
-    border: 1px solid #060707;
+    border: $border;
 }
 
 .main-nav__item a {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Reset*/
 /* Reset and base styles  */
 * {
@@ -126,6 +127,13 @@ a {
   background-color: #C8B6E8;
   border-radius: 70%;
   border: 1px solid #060707;
+}
+
+.btn {
+  letter-spacing: 1px;
+  padding: 12px 48px;
+  border: 1px solid #060707;
+  background: #D9E8B6;
 }
 
 .container {
@@ -344,7 +352,7 @@ a {
             transform: translateX(calc(-100% - 20px));
   }
 }
-/*runningLine-primus*/
+/*runningLine-primus-end*/
 /*payday-deals*/
 .payday-deals {
   margin-bottom: 20px;
@@ -363,6 +371,7 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .payday-deals__item {
@@ -445,7 +454,151 @@ a {
   color: #B1B5B7;
 }
 
-/*payday-deals*/
+.payday-deals__item-color--denim-skirt li:nth-child(1) {
+  background: #BAE1EB;
+}
+
+.payday-deals__item-color--denim-skirt li:nth-child(2) {
+  background: #FFF;
+}
+
+.payday-deals__item-color--daisy-dress li:nth-child(1) {
+  background: #C8B6E8;
+}
+
+.payday-deals__item-color--woll-cardigan li:nth-child(1) {
+  background: #C8B6E8;
+}
+
+.payday-deals__item-color--woll-cardigan li:nth-child(2) {
+  background: #060707;
+}
+
+.payday-deals__item-color--woll-cardigan li:nth-child(3) {
+  background: #EF9854;
+}
+
+.payday-deals__item-color--over-jacket li:nth-child(1) {
+  background: #060707;
+}
+
+.payday-deals__link {
+  text-align: center;
+}
+
+:root {
+  --primary: #227093;
+  --secondary: #ff5252;
+  --background: #eee;
+  --highlight: #ffda79;
+  /* Theme color */
+  --theme: var(--primary);
+}
+
+/* Core styles/functionality */
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.tab input:checked ~ .tab__content {
+  max-height: 10rem;
+}
+
+/* Visual styles */
+.accordion {
+  color: var(--theme);
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.tab__label,
+.tab__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  background: var(--theme);
+  cursor: pointer;
+}
+
+.tab__label {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.tab__label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.tab input:checked + .tab__label::after {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.tab__close {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.accordion--radio {
+  --theme: var(--secondary);
+}
+
+/* Arrow animation */
+.tab input:not(:checked) + .tab__label:hover::after {
+  -webkit-animation: bounce 0.5s infinite;
+          animation: bounce 0.5s infinite;
+}
+
+@-webkit-keyframes bounce {
+  25% {
+    -webkit-transform: rotate(90deg) translate(0.25rem);
+            transform: rotate(90deg) translate(0.25rem);
+  }
+  75% {
+    -webkit-transform: rotate(90deg) translate(-0.25rem);
+            transform: rotate(90deg) translate(-0.25rem);
+  }
+}
+
+@keyframes bounce {
+  25% {
+    -webkit-transform: rotate(90deg) translate(0.25rem);
+            transform: rotate(90deg) translate(0.25rem);
+  }
+  75% {
+    -webkit-transform: rotate(90deg) translate(-0.25rem);
+            transform: rotate(90deg) translate(-0.25rem);
+  }
+}
+/*payday-deals-end*/
 /*CONTENT-END*/
 /*FOOTER*/
 /*FOOTER-END*//*# sourceMappingURL=main.css.map */

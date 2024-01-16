@@ -30,6 +30,16 @@ a {
     border: $border
 }
 
+.btn {
+    letter-spacing: 1px;
+
+    padding: 12px 48px;
+
+    border: $border;
+    background: #D9E8B6;
+}
+
+
 .container {
     margin: 0 auto;
     padding: 0px 15px;

@@ -37,10 +37,18 @@ a {
 
     border: $border;
     background: #D9E8B6;
+
+    transition: $transition;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background: #EF9854;
 }
 
 
 .container {
+    position: relative;
     margin: 0 auto;
     padding: 0px 15px;
     width: 1262px;

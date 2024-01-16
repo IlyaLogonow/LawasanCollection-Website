@@ -1,0 +1,29 @@
+.best-seller {
+    margin-bottom: 20px;
+}
+
+.best-seller__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 719px;
+}
+
+.payday-deals__item-color--pants li:nth-child(1) {
+    background: #060707;
+}
+.payday-deals__item-color--pants li:nth-child(2) {
+    background: #656565;
+}
+
+
+.payday-deals__item-color--work-jacket li:nth-child(1) {
+    background: #FFF;
+}
+.payday-deals__item-color--work-jacket li:nth-child(2) {
+    background: #060707;
+}
+
+.best-seller__link {
+    text-align: center;
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Reset*/
 /* Reset and base styles  */
 * {
@@ -134,9 +133,18 @@ a {
   padding: 12px 48px;
   border: 1px solid #060707;
   background: #D9E8B6;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background: #EF9854;
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
   padding: 0px 15px;
   width: 1262px;
@@ -354,10 +362,6 @@ a {
 }
 /*runningLine-primus-end*/
 /*payday-deals*/
-.payday-deals {
-  margin-bottom: 20px;
-}
-
 .payday-deals__title {
   margin-bottom: 40px;
 }
@@ -484,18 +488,22 @@ a {
 
 .payday-deals__link {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-:root {
-  --primary: #227093;
-  --secondary: #ff5252;
-  --background: #eee;
-  --highlight: #ffda79;
-  /* Theme color */
-  --theme: var(--primary);
+/*payday-deals-end*/
+/*top-collections*/
+.top-collections {
+  position: relative;
+  min-height: 705px;
+  margin-bottom: 62px;
 }
 
-/* Core styles/functionality */
+.top-collections__title {
+  margin-top: 72px;
+  margin-bottom: 40px;
+}
+
 .tab input {
   position: absolute;
   opacity: 0;
@@ -509,16 +517,29 @@ a {
   transition: all 0.35s;
 }
 
+.tab__content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.tab__content__item img {
+  width: 100px;
+  height: 130px;
+}
+
+.tab__content__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .tab input:checked ~ .tab__content {
   max-height: 10rem;
 }
 
-/* Visual styles */
 .accordion {
-  color: var(--theme);
-  border: 2px solid;
-  border-radius: 0.5rem;
-  overflow: hidden;
+  margin-top: 53.5px;
+  color: #060707;
 }
 
 .tab__label,
@@ -526,49 +547,37 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
-  background: var(--theme);
-  cursor: pointer;
-}
-
-.tab__label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  max-width: 596px;
+  color: #060707;
+  font-size: 32px;
+  padding: 40px 0px 40px 20px;
+  cursor: pointer;
+  border-top: 1px solid #060707;
+  border-bottom: 1px solid #060707;
 }
 
 .tab__label::after {
-  content: "❯";
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  content: url("./../img/top-collections/arrow.svg");
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
 
 .tab input:checked + .tab__label::after {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .tab__content p {
   margin: 0;
   padding: 1rem;
-}
-
-.tab__close {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 0.5rem 1rem;
-  font-size: 0.75rem;
-}
-
-.accordion--radio {
-  --theme: var(--secondary);
 }
 
 /* Arrow animation */
@@ -598,7 +607,55 @@ a {
             transform: rotate(90deg) translate(-0.25rem);
   }
 }
-/*payday-deals-end*/
+.top-collections__img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 468.34px;
+  height: 582px;
+}
+
+/*top-collections-end*/
+/*best-seller*/
+.best-seller {
+  margin-bottom: 20px;
+}
+
+.best-seller__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 719px;
+}
+
+.payday-deals__item-color--pants li:nth-child(1) {
+  background: #060707;
+}
+
+.payday-deals__item-color--pants li:nth-child(2) {
+  background: #656565;
+}
+
+.payday-deals__item-color--work-jacket li:nth-child(1) {
+  background: #FFF;
+}
+
+.payday-deals__item-color--work-jacket li:nth-child(2) {
+  background: #060707;
+}
+
+.best-seller__link {
+  text-align: center;
+}
+
+/*best-seller-end*/
 /*CONTENT-END*/
 /*FOOTER*/
 /*FOOTER-END*//*# sourceMappingURL=main.css.map */

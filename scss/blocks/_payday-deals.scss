@@ -1,201 +1,115 @@
-.payday-deals {
-    margin-bottom: 20px;
-}
-
 .payday-deals__title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .payday-deals__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .payday-deals__item {
-    padding: 16px 16px;
-    border: $border;
+  padding: 16px 16px;
+  border: $border;
 }
 
 .payday-deals__img {
-    width: 246px;
-    height: 324px;
-    margin-bottom: 20px;
+  width: 246px;
+  height: 324px;
+  margin-bottom: 20px;
 }
 
 .payday-deals__item-color {
-    display: flex;
-    margin-bottom: 12px;
+  display: flex;
+  margin-bottom: 12px;
 }
 
 .payday-deals__item-color li {
-    width: 20px;
-    height: 20px;
-    border-radius: 100px;
-    border: $border;
-    background: #FFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  border: $border;
+  background: #FFF;
 }
 
 .payday-deals__item-color li:not(:last-child) {
-    margin-right: 9px;
+  margin-right: 9px;
 }
 
 .payday-deals__item h3 {
-    font-size: 24px;
-    letter-spacing: 1px;
-    margin-bottom: 4px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
 }
 
 .payday-deals__item p {
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
 }
 
 .payday-deals__grade {
-    display: flex;
-    margin-bottom: 16.5px;
+  display: flex;
+  margin-bottom: 16.5px;
 }
 
 .payday-deals__grade li:not(:last-child) {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 .payday-deals__grade img {
-    width: 15px;
-    height: 14px;
+  width: 15px;
+  height: 14px;
 }
 
 .payday-deals__grade p {
-    font-size: 12px;
-    letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 .payday-deals__price {
-    display: flex;
+  display: flex;
 
-    font-size: 16px;
-    font-weight: 800;
-    letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .payday-deals__price li:not(:last-child) {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .payday-deals__price--not-relevant {
-    color: #B1B5B7;
+  color: #B1B5B7;
 }
 
 .payday-deals__item-color--denim-skirt li:nth-child(1){
-    background: #BAE1EB;
+  background: #BAE1EB;
 }
 .payday-deals__item-color--denim-skirt li:nth-child(2){
-    background: #FFF;
+  background: #FFF;
 }
 
 .payday-deals__item-color--daisy-dress li:nth-child(1) {
-    background: #C8B6E8;
+  background: #C8B6E8;
 }
 
 .payday-deals__item-color--woll-cardigan li:nth-child(1) {
-    background: #C8B6E8;
+  background: #C8B6E8;
 }
 .payday-deals__item-color--woll-cardigan li:nth-child(2) {
-    background: #060707;
+  background: #060707;
 }
 .payday-deals__item-color--woll-cardigan li:nth-child(3) {
-    background: #EF9854;
+  background: #EF9854;
 }
 
 .payday-deals__item-color--over-jacket li:nth-child(1) {
-    background: #060707;
+  background: #060707;
 }
 
 .payday-deals__link {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
-
-
-///////////////////////
-:root {
-    --primary: #227093;
-    --secondary: #ff5252;
-    --background: #eee;
-    --highlight: #ffda79;
-    /* Theme color */
-    --theme: var(--primary);
-  }
-
-  /* Core styles/functionality */
-  .tab input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-  .tab__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.35s;
-  }
-  .tab input:checked ~ .tab__content {
-    max-height: 10rem;
-  }
-  
-  /* Visual styles */
-  .accordion {
-    color: var(--theme);
-    border: 2px solid;
-    border-radius: 0.5rem;
-    overflow: hidden;
-  }
-  .tab__label,
-  .tab__close {
-    display: flex;
-    color: white;
-    background: var(--theme);
-    cursor: pointer;
-  }
-  .tab__label {
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .tab__label::after {
-    content: "\276F";
-    width: 1em;
-    height: 1em;
-    text-align: center;
-    transform: rotate(90deg);
-    transition: all 0.35s;
-  }
-  .tab input:checked + .tab__label::after {
-    transform: rotate(270deg);
-  }
-  .tab__content p {
-    margin: 0;
-    padding: 1rem;
-  }
-  .tab__close {
-    justify-content: flex-end;
-    padding: 0.5rem 1rem;
-    font-size: 0.75rem;
-  }
-  .accordion--radio {
-    --theme: var(--secondary);
-  }
-  
-  /* Arrow animation */
-  .tab input:not(:checked) + .tab__label:hover::after {
-    animation: bounce .5s infinite;
-  }
-  @keyframes bounce {
-    25% {
-      transform: rotate(90deg) translate(.25rem);
-    }
-    75% {
-      transform: rotate(90deg) translate(-.25rem);
-    }
-  }
-  

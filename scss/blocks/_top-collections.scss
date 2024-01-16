@@ -1,0 +1,94 @@
+.top-collections {
+    position: relative;
+    min-height: 705px;
+    margin-bottom: 62px;
+}
+
+.top-collections__title {
+    margin-top: 72px;
+    margin-bottom: 40px;
+}   
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+}
+
+.tab__content__list {
+    display: flex;
+    padding: 10px;
+}
+
+.tab__content__item img {
+    width: 100px;
+    height: 130px;
+}
+
+.tab__content__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.tab input:checked ~ .tab__content {
+    max-height: 10rem;
+}
+
+.accordion {
+    margin-top: 53.5px;
+    color: $main-color;
+}
+.tab__label,
+.tab__close {
+    display: flex;
+    justify-content: space-between;
+    max-width: 596px;
+    color: $main-color;
+    font-size: 32px;
+    padding: 40px 0px 40px 20px;
+    cursor: pointer;
+
+    border-top: $border;
+    border-bottom: $border;
+}
+.tab__label::after {
+content: url('./../img/top-collections/arrow.svg');
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+    transform: rotate(0deg);
+    transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+    transform: rotate(90deg);
+}
+.tab__content p {
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Arrow animation */
+.tab input:not(:checked) + .tab__label:hover::after {
+    animation: bounce .5s infinite;
+}
+@keyframes bounce {
+25% {
+    transform: rotate(90deg) translate(.25rem);
+}
+75% {
+    transform: rotate(90deg) translate(-.25rem);
+}
+}
+
+.top-collections__img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 468.34px;
+    height: 582px;
+}

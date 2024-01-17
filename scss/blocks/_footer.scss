@@ -1,14 +1,16 @@
 .footer {
-    max-width: 1020px;
-    margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 60px;
+}
+
+.footer__container {
+    max-width: 1020px;
+    margin: 0 auto;
 }
 
 .footer__row {
     display: flex;
     justify-content: space-between;
-    border: $border;
 }
 
 .footer__list {
@@ -59,4 +61,34 @@
 
 .footer__input-btn {
     display: inline-block;
+}
+
+.footer__botom {
+    margin-top: 60px;
+}
+
+.footer__botom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__botom-social-media {
+    display: flex;
+}
+
+.footer__botom-social-media li:not(:last-child) {
+    margin-right: 28px;
+}
+
+.footer__botom-social-media img {
+    width: 20px;
+    height: 20px;
+
+    transition: $transition;
+}
+
+.footer__botom-social-media img:hover,
+.footer__botom-social-media img:focus,
+.footer__botom-social-media img:active {
+    transform: scale(2);
 }

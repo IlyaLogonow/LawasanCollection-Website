@@ -2,3 +2,46 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.lifestyle__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 794px;
+}
+
+.lifestyle__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lifestyle__block {
+    border: $border;
+}
+
+.lifestyle__block-content {
+    padding: 16px;
+
+    img {
+        width: 564px;
+        height: 324px;
+    }
+
+    h3 {
+        max-width: 540px;
+        height: 58px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        max-width: 540px;
+        line-height: 25px; 
+        margin-bottom: 20px;
+    }
+}
+
+.lifestyle__link {
+    text-align: center;
+}

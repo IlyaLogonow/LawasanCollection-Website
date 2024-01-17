@@ -362,27 +362,76 @@
                 <div class="lifestyle__wrapper">
                     <h2 class="lifestyle__title title">Lifestyle</h2>
                     <div class="lifestyle__row">
-                        <article>
-                            <h3>The 5 Golden Rules of Athleisure: Is It Really Acceptable to Wear Yoga Pants All Day Long?</h3>
-                            <img src="img/lifestyle/lifestyle1.jpg" alt="lifestyle">
-                            <p>Blame the designer athleisure boom or the annual glut of New Year’s resolutions to hit the gym on the regular, but this month you can expect to see even more women than usual wearing workout gear.</p>
-                            <a class="btn" href="#">Read Article</a>
+                        <article class="lifestyle__block">
+                            <div class="lifestyle__block-content">
+                                <img src="img/lifestyle/lifestyle1.jpg" alt="lifestyle">
+                                <h3>The 5 Golden Rules of Athleisure: Is It Really Acceptable to Wear Yoga Pants All Day Long?</h3>
+                                <p>Blame the designer athleisure boom or the annual glut of New Year’s resolutions to hit the gym on the regular, but this month you can expect to see even more women than usual wearing workout gear.</p>
+                                <a class="btn" href="#">Read Article</a>
+                            </div>
                         </article>
 
-                        <article>
-                            <h3>Y2K Fashion 101: How 2023 Got the Millennium Bug All Over Again</h3>
-                            <img src="img/lifestyle/lifestyle2.jpg" alt="lifestyle">
-                            <p>Picture this: a midriff-baring ribbed tank top paired with camouflage cargo pants, and a Fendi baguette bag nonchalantly slung over the shoulder; frayed denim shorts belted by a chunky round buckle, paired with strappy kitten heels and a Von Dutch trucker hat;</p>
-                            <a class="btn" href="#">Read Article</a>
+                        <article class="lifestyle__block">
+                            <div class="lifestyle__block-content"> 
+                                <img src="img/lifestyle/lifestyle2.jpg" alt="lifestyle">
+                                <h3>Y2K Fashion 101: How 2023 Got the Millennium Bug All Over Again</h3>
+                                <p>Picture this: a midriff-baring ribbed tank top paired with camouflage cargo pants, and a Fendi baguette bag nonchalantly slung over the shoulder; frayed denim shorts belted by a chunky round buckle, paired </p>
+                                <a class="btn" href="#">Read Article</a>
+                            </div>
                         </article>
                     </div>
-                    <a class="btn" href="#">Read All</a>
+                    <div class="lifestyle__link">
+                        <a class="btn" href="#">Read All</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
+        <div class="footer__row">
+            <ul class="footer__list">
+                <li class="footer__list-item"><h3>Catalog</h3></li>
+                <li class="footer__list-item"><a href="#">Payday Deals</a></li>
+                <li class="footer__list-item"><a href="#">Best Seller</a></li>
+                <li class="footer__list-item"><a href="#">Bottom</a></li>
+                <li class="footer__list-item"><a href="#">Top</a></li>
+                <li class="footer__list-item"><a href="#">Bags</a></li>
+                <li class="footer__list-item"><a href="#">Accessories</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li class="footer__list-item"><h3>Customer Info</h3></li>
+                <li class="footer__list-item"><a href="#">About Us</a></li>
+                <li class="footer__list-item"><a href="#">Stockist</a></li>
+                <li class="footer__list-item"><a href="#">Lifestyle</a></li>
+                <li class="footer__list-item"><a href="#">FAQS</a></li>
+                <li class="footer__list-item"><a href="#">Contact</a></li>
+                <li class="footer__list-item"><a href="#">For Business</a></li>
+            </ul>
+
+            <ul class="footer__list">
+                <li class="footer__list-item"><h3>Catalog</h3></li>
+                <li class="footer__list-item"><a href="#">Deliveries & Returns</a></li>
+                <li class="footer__list-item"><a href="#">Term & Conditions</a></li>
+                <li class="footer__list-item"><a href="#">Refund Policy</a></li>
+                <li class="footer__list-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+
+            <form class="footer__form" id="example" action="page.php" method="POST">
+                <div class="footer__form-content">
+                    <h3>Sign Up For Updates</h3>
+                    <div class="footer__form-row">
+                        <input class="footer__input-email" placeholder="Whats your email address?" type="email" id="email" name="email">
+                    </div>
+                    <button class="footer__input-btn btn" form="example" type="submit" name="send_other">Subscribe</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer__botom">
+            
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

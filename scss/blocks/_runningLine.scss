@@ -14,6 +14,7 @@
     min-height: 59px;
     background-color: $white;
 }
+
 .items {
     flex-shrink: 0;
     display: flex;
@@ -47,3 +48,16 @@
     }
 }
   
+@media screen and (max-width: 1000px) {
+    .runningLine__items {
+        font-size: 12px;
+        min-height: 39px;
+    }
+
+    .item--after::after {
+        content: url("./../img/runningLine/runningLine-item.svg");
+        width: 10px;
+        height: 10px;
+        margin-left: 20px;
+    }
+}

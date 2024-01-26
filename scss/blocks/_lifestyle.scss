@@ -12,6 +12,7 @@
 
 .lifestyle__row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -25,6 +26,7 @@
     img {
         width: 564px;
         height: 324px;
+        margin-bottom: 20px;
     }
 
     h3 {
@@ -44,4 +46,43 @@
 
 .lifestyle__link {
     text-align: center;
+}
+
+@media screen and (max-width: 1225px) {
+    .lifestyle__title {
+        margin-bottom: 30px;
+    }
+    
+    .lifestyle__row {
+       justify-content: center;
+    }
+    
+    .lifestyle__block {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .lifestyle__block-content {
+        padding: 16px;
+        text-align: center;
+    
+        img {
+            width: 564px;
+            height: 324px;
+        }
+    
+        h3 {
+            max-width: 540px;
+            height: 58px;
+            font-size: 24px;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+    
+        p {
+            max-width: 540px;
+            line-height: 25px; 
+            margin-bottom: 20px;
+        }
+    }
 }

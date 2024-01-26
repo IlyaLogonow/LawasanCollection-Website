@@ -11,6 +11,7 @@
 
 .payday-deals__item {
   padding: 16px 16px;
+  margin-bottom: 20px;
   border: $border;
 }
 
@@ -112,4 +113,34 @@
 .payday-deals__link {
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1180px) {
+  .payday-deals__list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .payday-deals__item:not(:last-child) {
+    margin-right: 0px;
+  }
+  
+  .payday-deals__img {
+    width: 200px;
+    height: 270px;
+    margin-bottom: 10px;
+  }
+  
+  .payday-deals__item-color {
+    margin-bottom: 8px;
+  }
+  
+  .payday-deals__grade {
+    margin-bottom: 14px;
+  }
+  
+  .payday-deals__price {
+    font-size: 13px;
+  }
 }

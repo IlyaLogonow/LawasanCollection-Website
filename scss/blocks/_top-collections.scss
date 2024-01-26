@@ -92,3 +92,20 @@ content: url('./../img/top-collections/arrow.svg');
     width: 468.34px;
     height: 582px;
 }
+
+@media screen and (max-width: 1100px) {
+    .top-collections__img {
+        display: none;    
+    }
+
+    .top-collections {
+        margin-bottom: 42px;
+    }
+    .accordion {
+        margin-top: 43.5px;
+    }
+    .tab__label,
+    .tab__close {
+        font-size: 22px;
+    }
+}

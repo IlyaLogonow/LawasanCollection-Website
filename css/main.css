@@ -335,7 +335,7 @@ a {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
   }
   .menu__btn > span,
   .menu__btn > span::before,
@@ -369,6 +369,7 @@ a {
     background-color: #FFF8F0;
     -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
             box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    z-index: 3;
   }
   .menu__item {
     display: block;
@@ -461,7 +462,7 @@ a {
 /*hero-end*/
 /*runningLine-primus*/
 .runningLine-primus {
-  margin-bottom: 16pxpx;
+  margin-bottom: 16px;
 }
 
 .runningLine-primus__items {
@@ -491,6 +492,25 @@ a {
             transform: translateX(calc(-100% - 20px));
   }
 }
+@media screen and (max-width: 1260px) {
+  .runningLine-primus {
+    margin-bottom: 16px;
+  }
+  .runningLine-primus__items {
+    min-height: 53px;
+    background-color: #EF9854;
+  }
+  .runningLine-primus__items .items {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .item-primus--after::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+  }
+}
 /*runningLine-primus-end*/
 /*payday-deals*/
 .payday-deals__title {
@@ -511,6 +531,7 @@ a {
 
 .payday-deals__item {
   padding: 16px 16px;
+  margin-bottom: 20px;
   border: 1px solid #060707;
 }
 
@@ -622,6 +643,32 @@ a {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1180px) {
+  .payday-deals__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .payday-deals__item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .payday-deals__img {
+    width: 200px;
+    height: 270px;
+    margin-bottom: 10px;
+  }
+  .payday-deals__item-color {
+    margin-bottom: 8px;
+  }
+  .payday-deals__grade {
+    margin-bottom: 14px;
+  }
+  .payday-deals__price {
+    font-size: 13px;
+  }
+}
 /*payday-deals-end*/
 /*top-collections*/
 .top-collections {
@@ -746,6 +793,21 @@ a {
   height: 582px;
 }
 
+@media screen and (max-width: 1100px) {
+  .top-collections__img {
+    display: none;
+  }
+  .top-collections {
+    margin-bottom: 42px;
+  }
+  .accordion {
+    margin-top: 43.5px;
+  }
+  .tab__label,
+  .tab__close {
+    font-size: 22px;
+  }
+}
 /*top-collections-end*/
 /*best-seller*/
 .best-seller {
@@ -786,6 +848,11 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 1100px) {
+  .best-seller__title {
+    margin-bottom: 30px;
+  }
+}
 /*best-seller-end*/
 /*newsletter*/
 .newsletter {
@@ -834,6 +901,36 @@ a {
   margin-right: 40px;
 }
 
+@media screen and (max-width: 1230px) {
+  .newsletter {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .newsletter__title {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+  .newsletter__text {
+    margin-bottom: 30px;
+  }
+  .newsletter {
+    width: 100%;
+  }
+  .newsletter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsletter__input-email {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 /*newsletter-end*/
 /*lifestyle*/
 .lifestyle {
@@ -859,6 +956,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -874,6 +973,7 @@ a {
 .lifestyle__block-content img {
   width: 564px;
   height: 324px;
+  margin-bottom: 20px;
 }
 .lifestyle__block-content h3 {
   max-width: 540px;
@@ -892,6 +992,41 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 1225px) {
+  .lifestyle__title {
+    margin-bottom: 30px;
+  }
+  .lifestyle__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lifestyle__block {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .lifestyle__block-content {
+    padding: 16px;
+    text-align: center;
+  }
+  .lifestyle__block-content img {
+    width: 564px;
+    height: 324px;
+  }
+  .lifestyle__block-content h3 {
+    max-width: 540px;
+    height: 58px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .lifestyle__block-content p {
+    max-width: 540px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+}
 /*lifestyle-end*/
 /*CONTENT-END*/
 /*FOOTER*/

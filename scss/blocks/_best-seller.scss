@@ -27,3 +27,9 @@
 .best-seller__link {
     text-align: center;
 }
+
+@media screen and (max-width: 1100px) {
+    .best-seller__title {
+        margin-bottom: 30px;
+    }
+}

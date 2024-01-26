@@ -1,5 +1,5 @@
 .runningLine-primus {
-    margin-bottom: 16pxpx;
+    margin-bottom: 16px;
 }
 .runningLine-primus__items {
     min-height: 93px;
@@ -22,5 +22,25 @@
     }
     to {
         transform: translateX(calc(-100% - 20px));
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .runningLine-primus {
+        margin-bottom: 16px;
+    }
+    .runningLine-primus__items {
+        min-height: 53px;
+        background-color: $runningLine-primus-bg;
+    }
+    .runningLine-primus__items .items {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .item-primus--after::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        margin-left: 0px;
     }
 }
